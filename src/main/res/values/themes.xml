@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.YouTubeFinalProjectMOB2" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/yt_white</item>
+        <item name="colorPrimaryVariant">@color/yt_white</item>
+        <item name="colorOnPrimary">@color/yt_black</item>
+        <item name="colorSecondary">@color/yt_red</item>
+        <item name="colorSecondaryVariant">@color/yt_red_dark</item>
+        <item name="colorOnSecondary">@color/yt_white</item>
+        <item name="android:statusBarColor">@color/yt_white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/yt_white</item>
+        <item name="android:windowBackground">@color/yt_light_gray_bg</item>
+    </style>
+
+    <style name="Theme.YouTubeFinalProjectMOB2.AppBarOverlay." parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
+    <style name="Theme.YouTubeFinalProjectMOB2.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <style name="AppTabLayoutStyle" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabIndicatorColor">@color/yt_red</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabSelectedTextColor">@color/yt_black</item>
+        <item name="tabTextColor">@color/yt_gray_text</item>
+        <item name="tabTextAppearance">@style/AppTabTextAppearance</item>
+    </style>
+
+    <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="SearchEditTextStyle">
+        <item name="android:background">@drawable/bg_search_field</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/yt_black</item>
+        <item name="android:textColorHint">@color/yt_gray_text</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionSearch</item>
+    </style>
+
+    <style name="PrimaryButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/yt_red</item>
+        <item name="android:textColor">@color/yt_white</item>
+        <item name="cornerRadius">24dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+</resources>

@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--  يظهر دائماً كأيقونة في الـ Toolbar  -->
+    <item android:id="@+id/action_refresh" android:icon="@drawable/ic_refresh" android:title="@string/action_refresh" app:showAsAction="always"/>
+    <!--  يظهر في قائمة الـ overflow (النقاط الثلاث)  -->
+    <item android:id="@+id/action_clear" android:title="@string/action_clear" app:showAsAction="never"/>
+    <item android:id="@+id/action_about" android:title="@string/action_about" app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="6dp"
+    android:background="@drawable/bg_card"
+    android:elevation="2dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:padding="10dp">
+
+    <FrameLayout
+        android:id="@+id/frameThumbnail"
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_thumbnail_placeholder"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/tab_search" />
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_play_badge"
+            android:padding="6dp"
+            android:src="@drawable/ic_play"
+            android:contentDescription="@null" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="2"
+        android:textColor="@color/yt_black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@id/btnMore"
+        app:layout_constraintStart_toEndOf="@id/frameThumbnail"
+        app:layout_constraintTop_toTopOf="@id/frameThumbnail"
+        tools:text="Sample Video Title That Might Wrap to Two Lines" />
+
+    <TextView
+        android:id="@+id/txtChannel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/yt_gray_text"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@id/btnMore"
+        app:layout_constraintStart_toEndOf="@id/frameThumbnail"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle"
+        tools:text="Channel Name" />
+
+    <TextView
+        android:id="@+id/txtPublished"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/yt_gray_text"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/btnMore"
+        app:layout_constraintStart_toEndOf="@id/frameThumbnail"
+        app:layout_constraintTop_toBottomOf="@id/txtChannel"
+        tools:text="Jan 1, 2026" />
+
+    <ImageButton
+        android:id="@+id/btnMore"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/menu_view_details"
+        android:src="@drawable/ic_more_vert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
